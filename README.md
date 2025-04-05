@@ -40,13 +40,16 @@ Key aspects:
 ### Environment Variables
 
 Add the necessary environment variables to your `.env.local` file in the main
-app directory:
+app directory. These values will come from the Sanity Studio project that you'll generate in the section below:
 
 ```
-NEXT_PUBLIC_SANITY_PROJECT_ID=your-project-id
-NEXT_PUBLIC_SANITY_DATASET=production
-NEXT_PUBLIC_SANITY_TOKEN=your-sanity-token
+# Use the values from your Sanity Studio project
+NEXT_PUBLIC_SANITY_PROJECT_ID=your-project-id  # From the Sanity Studio setup
+NEXT_PUBLIC_SANITY_DATASET=production          # The dataset you create in Sanity
+NEXT_PUBLIC_SANITY_TOKEN=your-sanity-token     # Generate this in the Sanity dashboard
 ```
+
+> **Note**: You'll need to create the Sanity Studio project first (as described in the Sanity Studio Integration section below) and then use the project ID, dataset name, and token from that setup in these environment variables.
 
 ## Features Structure
 
